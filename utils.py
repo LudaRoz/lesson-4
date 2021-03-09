@@ -23,7 +23,3 @@ def currency_rates(input_code):
     data = data.replace('.', '-')
     data = datetime.strptime(data, '%d-%m-%Y').date()
     print(input_code, data)
-
-
-country_code = (input("какуя валюта вас интересует? ")).upper()
-currency_rates(country_code)
